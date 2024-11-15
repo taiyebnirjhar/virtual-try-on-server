@@ -40,8 +40,8 @@ ehthumbs.db
 Thumbs.db
 
 # Build outputs
-dist
-build
+/dist
+/build
 .next
 out
 
