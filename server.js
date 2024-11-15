@@ -131,7 +131,7 @@ app.post("/api/virtual-tryon", handleMulterUpload, async (req, res) => {
       error: error.message || "Failed to process virtual try-on request",
       errorType: error.name,
       errorDetails:
-        process.env.NODE_ENV === "development" ? error.stack : undefined,
+        process.env.NODE_ENV === "development" ? error.stack : error.stack,
     });
   }
 });
