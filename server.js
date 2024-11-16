@@ -126,7 +126,7 @@ app.post("/api/virtual-tryon", handleMulterUpload, async (req, res) => {
     ) {
       gradioClient = null;
     }
-    res.status(200).json({
+    res.status(500).json({
       success: false,
       error: error.message || "Failed to process virtual try-on request",
       errorType: error.name,
